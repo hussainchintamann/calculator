@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <form action="#">
+            <div class="display">
+                <input id="result"  type="text" >
+            </div>
+            <div>
+                <button style="color: #33ffd8;" class="btn" onclick="clearResult()">AC</button>
+                <button style="color: #33ffd8;" class="btn" onclick="oneClear()">DE</button>
+                <button class="operator " onclick="getNumber('.')">.</button>
+                <button class="operator" onclick="getNumber('/')">/</button>
+            </div>
+            <div>
+                <button class="btn" onclick="getNumber('7')">7</button>
+                <button class="btn" onclick="getNumber('8')">8</button>
+                <button class="btn" onclick="getNumber('9')">9</button>
+                <button class="operator " onclick="getNumber('*')">*</button>
+            </div>
+            <div>
+                <button class="btn" onclick="getNumber('6')">4</button>
+                <button class="btn" onclick="getNumber('5')">5</button>
+                <button class="btn" onclick="getNumber('4')">6</button>
+                <button class="operator "onclick="getNumber('-')">-</button>
+            </div>
+            <div>
+                <button class="btn" onclick="getNumber('1')">1</button>
+                <button class="btn" onclick="getNumber('2')">2</button>
+                <button class="btn" onclick="getNumber('3')">3</button>
+                <button class="operator " onclick="getNumber('+')">+</button>
+            </div>
+            <div>
+                <button class="btn" onclick="getNumber('00')">00</button>
+                <button class="btn" onclick="getNumber('0')">0</button>
+                <button onclick="getResult()" class="result">=</button>
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
